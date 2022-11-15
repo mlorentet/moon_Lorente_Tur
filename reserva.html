@@ -8,10 +8,27 @@
     <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
+    <!--mlt: Barra de navegació responsive-->
     <nav>
         <a href="index.html">Home</a>
         <a href="galeria.html">Galeria</a>
         <a href="reserva.html">Reserva</a>
     </nav>
+    <!--mlt: Formulari reserva-->
+    <section class="background">
+        <form class="form-reserva" action="index.html">
+            <h1>Reserva el teu viatge a la lluna</h1>
+            <label for="passatgers">Passatgers:</label>
+            <input id="passatgers" type="number" required />
+            <label for="sortida">Dia Sortida:</label>
+            <input id="sortida" type="date" required />
+            <label for="tornada">Dia Tornada:</label>
+            <input id="tornada" type="date" required />
+            <input type="submit" value="Enviar"/>
+        </form>
+    </section>
+    <footer>
+        <p>Carrer cabana 31, 07141 Es Pont d'Inca</p>
+    </footer>
 </body>
 </html>

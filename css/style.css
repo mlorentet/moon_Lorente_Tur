@@ -9,7 +9,7 @@ body {
     font-family: 'Roboto', sans-serif;
     font-size: 15px;
 }
-
+/*mlt: Barra de navegació */
 nav {
     display: flex;
     flex-wrap: wrap;
@@ -30,7 +30,7 @@ nav a {
 nav a:hover {
     background-color: #0077b6;
 }
-
+/*mlt: Imatge de fons */
 .background {
     display: flex;
     width: 100%;
@@ -72,6 +72,8 @@ nav a:hover {
     margin: 10px 0;
 }
 
+
+/* mlt: galeria imatges */
 .gallery {
     width: 70%;
     padding: 10px 15%;
@@ -85,16 +87,116 @@ nav a:hover {
     background-repeat: no-repeat;
 }
 
-.gallery img {
+.gallery div {
     height: 30%;
+    width: 30%;
     margin: 15px 0;
     transition: .3s ease-in-out;
 }
 
-.gallery img:hover {
+.img1 {
+    background-image:  url("/img/moon1.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.img2 {
+    background-image:  url("/img/moon2.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.img3 {
+    background-image:  url("/img/moon3.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.img4 {
+    background-image:  url("/img/moon4.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.img5 {
+    background-image:  url("/img/moon5.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.img6 {
+    background-image:  url("/img/moon6.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.img7 {
+    background-image:  url("/img/moon7.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.img8 {
+    background-image:  url("/img/moon8.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.img9 {
+    background-image:  url("/img/moon9.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.gallery div:hover {
     transform: scale(1.1)
 }
 
+
+/* mlt: formulari reserva */
+.form-reserva {
+    display: flex;
+    flex-direction: column;
+    background-color:rgba(0, 119, 182, .6);
+    align-items: center;
+    border: 5px solid #03045e;
+    border-radius: 10px;
+    padding: 15px;
+    margin: 20px;
+    width: 40%;
+}
+
+.form-reserva h1 {
+    font-size: 30px;
+    font-weight: 600;
+    margin: 10px;
+}
+
+.form-reserva input {
+    background-color:rgba(0, 166, 255, 0.7);
+    border: 2px solid #03045e;
+    border-radius: 10px;
+    padding: 5px;
+    margin: 10px;
+    width: 175px;
+    outline: none;
+}
+
+.form-reserva input[type = submit] {
+    cursor: pointer;
+}
+
+
+/* mlt: footer */
 footer {
     padding: 10px 0;
     width: 100%;
@@ -104,6 +206,8 @@ footer {
     color: #FFF;
 }
 
+
+/* mlt: media queries */
 @media (max-width: 1200px) {
     nav a {
         font-size: 28px
@@ -112,7 +216,7 @@ footer {
         width: 80%;
         padding: 10px 10%;
     }
-    .gallery img {
+    .gallery div {
         height: 29%;
     }
 }
@@ -125,20 +229,20 @@ footer {
         width: 80%;
         padding: 10px 10%;
     }
-    .gallery img {
+    .gallery div {
         height: 20%;
     }
 }
 
 @media (max-width: 768px) {
     nav a {
-        padding: 40px;
+        padding: 20px 40px;
     }
     .gallery {
         width: 80%;
         padding: 10px 10%;
     }
-    .gallery img {
+    .gallery div {
         height: 15%;
     }
 }
@@ -146,6 +250,8 @@ footer {
 @media (max-width: 480px) {
     
     nav a {
+        font-size: 18px;
+        padding: 10px;
         width: 100%;
         text-align: center;
     }
@@ -154,7 +260,10 @@ footer {
         width: 100%;
         padding: 10px 0;
     }
-    .gallery img {
+    .gallery div {
         height: 12%;
+    }
+    .form-reserva {
+        width: 70%;
     }
 }
