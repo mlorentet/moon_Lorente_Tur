@@ -72,6 +72,29 @@ nav a:hover {
     margin: 10px 0;
 }
 
+.gallery {
+    width: 70%;
+    padding: 10px 15%;
+    height: 90vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-image: url("/img/moon.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.gallery img {
+    height: 30%;
+    margin: 15px 0;
+    transition: .3s ease-in-out;
+}
+
+.gallery img:hover {
+    transform: scale(1.1)
+}
+
 footer {
     padding: 10px 0;
     width: 100%;
@@ -85,15 +108,39 @@ footer {
     nav a {
         font-size: 28px
     }
+    .gallery {
+        width: 80%;
+        padding: 10px 10%;
+    }
+    .gallery img {
+        height: 29%;
+    }
 }
 
 @media (max-width: 920px) {
     nav a {
         font-size: 25px;
     }
+    .gallery {
+        width: 80%;
+        padding: 10px 10%;
+    }
+    .gallery img {
+        height: 20%;
+    }
 }
 
 @media (max-width: 768px) {
+    nav a {
+        padding: 40px;
+    }
+    .gallery {
+        width: 80%;
+        padding: 10px 10%;
+    }
+    .gallery img {
+        height: 15%;
+    }
 }
 
 @media (max-width: 480px) {
@@ -101,5 +148,13 @@ footer {
     nav a {
         width: 100%;
         text-align: center;
+    }
+    .gallery {
+        justify-content: space-around;
+        width: 100%;
+        padding: 10px 0;
+    }
+    .gallery img {
+        height: 12%;
     }
 }
